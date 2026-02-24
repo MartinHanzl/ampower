@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'apg' => [
+        'url' => env('APG_URL', 'https://transparency.apg.at/api/v1'),
+    ],
+
 ];
