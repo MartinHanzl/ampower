@@ -48,6 +48,12 @@ services:
                 - '${DB_USERNAME}'
             retries: 3
             timeout: 5s
+    adminer:
+        image: 'adminer:latest'
+        ports:
+            - 8080:8080
+        networks:
+            - sail
 networks:
     sail:
         driver: bridge
